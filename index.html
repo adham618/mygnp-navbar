@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mygnp</title>
+</head>
+
+<body>
+  <header>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      #page_header {
+        margin: 0;
+        padding: 0;
+        width: 100%
+      }
+
+      .wrapper {
+        margin: 0 auto;
+        max-width: unset;
+        width: 93%;
+      }
+
+      header {
+        display: flex;
+        height: auto;
+        background-color: #fff;
+        padding: 20px 0 15px;
+      }
+
+      header .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+      }
+
+      header .logo img {
+        height: 60px;
+      }
+
+      header nav {
+        display: flex;
+        align-items: center;
+      }
+
+      header ul {
+        display: flex;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-left: 6px;
+        gap: 28px;
+      }
+
+      header ul a {
+        font-size: 18.2px;
+        font-family: system-ui, Helvetica, Arial, sans-serif;
+        color: #002e5d;
+        text-decoration: none;
+        font-weight: 700;
+        letter-spacing: .8px;
+        text-transform: uppercase;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+      }
+
+      header ul a::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 3px;
+        bottom: -3px;
+        left: 0;
+        background-color: #E31837;
+        transform: scaleX(0);
+        transform-origin: top left;
+        transition: transform 0.3s ease;
+      }
+
+      header ul a:hover::before {
+        transform: scaleX(1);
+      }
+
+
+      header .subNav {
+        display: none !important;
+        visibility: hidden;
+      }
+
+      header nav ul li {
+        position: relative;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+      }
+
+      header nav ul li ul.subNav li a {
+        line-height: 30px;
+        text-align: right;
+        display: block;
+      }
+
+      header nav ul li:focus ul.subNav,
+      header nav ul li:hover ul.subNav {
+        display: block !important;
+        visibility: visible;
+      }
+
+      @media screen and (max-width: 821px) {
+        header nav {
+          display: none;
+        }
+
+        header {
+          height: auto;
+          padding: .7rem 0;
+        }
+
+        header .wrapper {
+          justify-content: center;
+        }
+
+        header .logo img {
+          height: unset;
+        }
+      }
+    </style>
+    <div class="wrapper">
+      <div class="logo">
+        <a href="https://www.mygnp.com">
+          <img class="logo" src="https://www.mygnp.com/pharmacies/wp-content/themes/gnptheme/assets/svg/gnp_logo.svg"
+            width="175" height="85" alt="The good neighbor pharmacy logo"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="https://www.mygnp.com">Home</a></li>
+          <li><a href="https://www.mygnp.com/about-us/">About</a></li>
+          <li><a href="https://www.mygnp.com/pharmacies/">Locations</a></li>
+          <li><a href="https://www.mygnp.com/blog/">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</body>
+
+</html>
